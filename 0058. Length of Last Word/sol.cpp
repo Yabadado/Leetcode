@@ -23,13 +23,19 @@ public:
         int counter = 0;
         bool findWord = false;
         for(int i=s.size()-1; i>=0; i--){
-            if(s[i]!=' '){          //case (2)
+            
+            //case (2)
+            if(s[i]!=' '){          
                 findWord = true;
                 counter++;
             }
-            else if(s[i]==' ' && !findWord) //case (1)
+            
+            //case (1)
+            else if(s[i]==' ' && !findWord) 
                 continue;
-            else                    //case (3)
+            
+            //case (3)
+            else                    
                 break;
         }
         return counter;
