@@ -1,0 +1,44 @@
+class Solution {
+public:
+    
+    bool solver(string s, vector<string>& wordDict, unordered_set<string> wordset){
+        
+        if(wordset.find(s)!=wordset.end())
+            return true;
+        
+        for(int i=0; i<wordDict.size(); i++){
+            
+            bool flag = false;
+            
+            if(wordDict[i][0]==s[0]){
+                
+                for(int j=0; j<wordDict[i].size();  j++){
+                    if(j==s.size() or wordDict[i][j]!=s[j]){
+                        flag = true;
+                        break;
+                    }
+                }
+                
+                if(flag) 
+                    continue;
+                
+                string tmp = s.substr(wordDict[i].size());
+                //cout<<"W: "<<wordDict[i]<<" tmp: "<<tmp<<endl;
+                if(solver(tmp, wordDict, wordset)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+    
+    bool wordBreak(string s, vector<string>& wordDict) {
+        
+        unordered_set<string> set;
+        for(string w: wordDict)
+            set.insert(w);
+        
+        return solver(s, wordDict, set);
+    }
+};
