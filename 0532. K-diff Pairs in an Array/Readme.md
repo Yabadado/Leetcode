@@ -3,7 +3,7 @@
 #### sol1.cpp
 hash table + sort
 
-Time Complexity : O(n)
+Time Complexity : O(nlog(n))
 Sapce Complexity : O(n)
 
 * Runtime: 52 ms, faster than 16.64% of C++ online submissions for K-diff Pairs in an Array.
