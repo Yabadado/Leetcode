@@ -1,14 +1,11 @@
 class Solution {
 public:
     string getSmallestString(int n, int k) {
-        string ret = "";
+        string ret(n, 'a');
         vector<char> ch(26);
         for(int i=0; i<26; i++)
             ch[i] = char(i+97);
-        
-        for(int i=0; i<n; i++){
-            ret+="a";
-        }
+
         
         while(n>0){
             if(k-n > 25){

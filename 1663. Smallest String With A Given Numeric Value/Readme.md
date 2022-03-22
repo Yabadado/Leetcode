@@ -6,5 +6,5 @@ greedy
 time complexity: O(n)
 space complexity: O(n)
 
-* Runtime: 106 ms, faster than 19.47% of C++ online submissions for Smallest String With A Given Numeric Value.
-* Memory Usage: 27.3 MB, less than 15.32% of C++ online submissions for Smallest String With A Given Numeric Value.
+* Runtime: 26 ms, faster than 97.59% of C++ online submissions for Smallest String With A Given Numeric Value.
+* Memory Usage: 21.3 MB, less than 63.46% of C++ online submissions for Smallest String With A Given Numeric Value.
