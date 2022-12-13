@@ -2,6 +2,5 @@
 
 ### sol1.cpp
 DP
-
-* Time:O(n^2)
-* Sapce:O(n^2)
+* Time:O( $n^2$ )
+* Sapce:O( $n^2$ )
