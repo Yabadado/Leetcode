@@ -6,7 +6,7 @@ DP
 * Space: O( $n$ ) 
 
 #### sol2.cpp
-DP(optimalize)
+DP(optimize)
 
 * Time: O( $n$ )
 * Space: O( $1$ )
